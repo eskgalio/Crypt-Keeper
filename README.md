@@ -3,7 +3,6 @@
 *"Where passwords go to rest... eternally!"*
 
 [![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/downloads/)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Security](https://img.shields.io/badge/security-AES--256-red.svg)](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)
 
 ## 🪦 Overview
@@ -161,10 +160,6 @@ cryptkeeper/
 3. Commit your changes
 4. Push to the branch
 5. Create a Pull Request
-
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🎭 Acknowledgments
 
