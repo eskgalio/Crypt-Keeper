@@ -1,0 +1,107 @@
+Metadata-Version: 2.4
+Name: cryptkeeper
+Version: 0.1.0
+Summary: The Crypt Keeper - Automated Secrets Vault & Password Rotator
+Home-page: https://github.com/yourusername/cryptkeeper
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Security :: Cryptography
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: cryptography>=41.0.1
+Requires-Dist: rich>=13.3.5
+Requires-Dist: click>=8.1.3
+Requires-Dist: python-dotenv>=1.0.0
+Requires-Dist: pyyaml>=6.0.1
+Requires-Dist: regex>=2023.5.5
+Requires-Dist: sqlalchemy>=2.0.15
+Requires-Dist: passlib>=1.7.4
+Requires-Dist: typer>=0.9.0
+Requires-Dist: pydantic>=2.4.2
+Requires-Dist: python-slugify>=8.0.1
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# 🦇 The Crypt Keeper - Automated Secrets Vault & Password Rotator
+
+*"Where passwords go to rest... eternally!"*
+
+## 🪦 Overview
+
+The Crypt Keeper is a powerful, local-first secrets management tool that helps development and IT teams handle sensitive credentials with proper security measures. It automatically detects, encrypts, and rotates secrets in your configuration files - all without requiring any cloud services.
+
+## ⚰️ Key Features
+
+- **Secrets Hunter**: Scans local files for exposed passwords and API keys using advanced regex patterns
+- **One-Click Encryption**: Automatically replaces plaintext secrets with AES-256 encrypted values
+- **Password Rotator**: Generates and rotates strong credentials automatically
+- **Graveyard Mode**: Maintains a detailed audit log of all changes with spooky Gothic messages
+- **Emergency Recovery**: Master key system for secret recovery when needed
+
+## 🕯️ Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/cryptkeeper.git
+cd cryptkeeper
+
+# Create a virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: .\venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+## 🧛‍♂️ Usage
+
+```bash
+# Start the Crypt Keeper
+python cryptkeeper.py
+
+# Scan a directory for secrets
+python cryptkeeper.py scan /path/to/directory
+
+# Encrypt detected secrets
+python cryptkeeper.py encrypt
+
+# Rotate passwords
+python cryptkeeper.py rotate
+```
+
+## 🔮 Security Features
+
+- AES-256 encryption for all stored secrets
+- Zero cloud dependency - everything stays local
+- Secure password generation following NIST guidelines
+- Comprehensive audit logging
+- Master key backup system
+
+## ⚠️ Important Notes
+
+1. Always backup your master key
+2. Store the audit logs in a secure location
+3. Review automated changes before applying them
+
+## 🦇 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📜 License
+
+This project is licensed under the MIT License - see the LICENSE file for details. 
